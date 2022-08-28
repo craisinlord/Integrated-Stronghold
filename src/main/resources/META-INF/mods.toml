@@ -1,0 +1,46 @@
+modLoader="javafml" #mandatory
+loaderVersion="[38,)" #mandatory
+license="All rights reserved"
+
+[[mods]] #mandatory
+modId="idas" #mandatory
+logoFile="idaslogo.png"
+logoBlur=false
+version="${file.jarVersion}" #mandatory
+displayName="Integrated Dungeons and Structures" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/idas"
+authors="CraisinLord"
+credits="Special thanks to TelpathicGrunt for thier structure tutorial! And Bdubs, GoodTimesWithScar and Mythical Sausage for building inspirations!"
+description='''
+Integrated Dungeons and Structures (aka IDAS) is a mod that adds heavily detailed structures using blocks and mobs from Quark, Biomes O’ Plenty, Alex’s Mobs, and Create.
+'''
+
+[[dependencies.idas]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.20)"
+
+[[dependencies.idas]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41.0.0,)"
+
+[[dependencies.idas]]
+    modId="quark"
+    mandatory=true
+    versionRange="*"
+
+[[dependencies.idas]]
+    modId="alexsmobs"
+    mandatory=true
+    versionRange="*"
+
+[[dependencies.idas]]
+    modId="autoreglib"
+    mandatory=true
+    versionRange="*"
+
+[[dependencies.idas]]
+    modId="citadel"
+    mandatory=true
+    versionRange="*"

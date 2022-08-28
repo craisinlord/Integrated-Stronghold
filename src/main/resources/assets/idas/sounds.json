@@ -1,0 +1,19 @@
+
+{
+  "calidum": {
+    "sounds": [
+      {
+        "name": "idas:calidum",
+        "stream": true
+      }
+    ]
+  },
+    "slither": {
+    "sounds": [
+      {
+        "name": "idas:slither",
+        "stream": true
+      }
+    ]
+  }
+}

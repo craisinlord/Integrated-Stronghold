@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "idas:tinkers_workshop",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 169480693,
+    "spacing": 50,
+    "separation": 30,
+    "type": "idas:advanced_random_spread",
+    "super_exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "#idas:tinkers_workshop_avoid"
+    }
+  }
+}
