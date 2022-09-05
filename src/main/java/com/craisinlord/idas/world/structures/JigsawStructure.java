@@ -11,7 +11,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.QuartPos;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.ChunkPos;
@@ -30,10 +29,18 @@ import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 
 import java.util.*;
 
-public class GenericJigsawStructure extends Structure {
+public class JigsawStructure extends Structure {
+    public static final Codec<ModStructureStart> CODEC_S = RecordCodecBuilder.<ModStructureStart>mapCodec(instance ->
+            instance.group(
+                    Codec.STRING.fieldOf("modId").forGetter(ModStructureStart::modId),
+                    ResourceLocation.CODEC.fieldOf("start").forGetter(ModStructureStart::start)
+            ).apply(instance, ModStructureStart::new)).codec();
 
-    public static final Codec<GenericJigsawStructure> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            GenericJigsawStructure.settingsCodec(instance),
+    public static record ModStructureStart(String modId, ResourceLocation start) {
+    }
+
+    public static final Codec<JigsawStructure> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            JigsawStructure.settingsCodec(instance),
             StructureTemplatePool.CODEC.fieldOf("start_pool").forGetter(structure -> structure.startPool),
             Codec.intRange(0, 30).fieldOf("size").forGetter(structure -> structure.size),
             Codec.INT.optionalFieldOf("min_y_allowed").forGetter(structure -> structure.minYAllowed),
@@ -49,7 +56,7 @@ public class GenericJigsawStructure extends Structure {
             Codec.intRange(1, 128).optionalFieldOf("max_distance_from_center").forGetter(structure -> structure.maxDistanceFromCenter),
             StringRepresentable.fromEnum(BURYING_TYPE::values).optionalFieldOf("burying_type").forGetter(structure -> structure.buryingType),
             Codec.BOOL.fieldOf("use_bounding_box_hack").orElse(false).forGetter(structure -> structure.useBoundingBoxHack)
-    ).apply(instance, GenericJigsawStructure::new));
+    ).apply(instance, JigsawStructure::new));
 
     public final Holder<StructureTemplatePool> startPool;
     public final int size;
@@ -67,22 +74,22 @@ public class GenericJigsawStructure extends Structure {
     public final Optional<BURYING_TYPE> buryingType;
     public final boolean useBoundingBoxHack;
 
-    public GenericJigsawStructure(Structure.StructureSettings config,
-                                  Holder<StructureTemplatePool> startPool,
-                                  int size,
-                                  Optional<Integer> minYAllowed,
-                                  Optional<Integer> maxYAllowed,
-                                  Optional<Integer> allowedYRangeFromStart,
-                                  HeightProvider startHeight,
-                                  Optional<Heightmap.Types> projectStartToHeightmap,
-                                  boolean cannotSpawnInLiquid,
-                                  Optional<Integer> terrainHeightCheckRadius,
-                                  Optional<Integer> allowedTerrainHeightRange,
-                                  Optional<Integer> biomeRadius,
-                                  HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
-                                  Optional<Integer> maxDistanceFromCenter,
-                                  Optional<BURYING_TYPE> buryingType,
-                                  boolean useBoundingBoxHack)
+    public JigsawStructure(Structure.StructureSettings config,
+                           Holder<StructureTemplatePool> startPool,
+                           int size,
+                           Optional<Integer> minYAllowed,
+                           Optional<Integer> maxYAllowed,
+                           Optional<Integer> allowedYRangeFromStart,
+                           HeightProvider startHeight,
+                           Optional<Heightmap.Types> projectStartToHeightmap,
+                           boolean cannotSpawnInLiquid,
+                           Optional<Integer> terrainHeightCheckRadius,
+                           Optional<Integer> allowedTerrainHeightRange,
+                           Optional<Integer> biomeRadius,
+                           HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
+                           Optional<Integer> maxDistanceFromCenter,
+                           Optional<BURYING_TYPE> buryingType,
+                           boolean useBoundingBoxHack)
     {
         super(config);
         this.startPool = startPool;

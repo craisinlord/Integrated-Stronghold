@@ -16,17 +16,15 @@ import net.minecraft.world.level.levelgen.heightproviders.HeightProvider;
 import net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
-import net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator;
-import net.minecraft.world.level.levelgen.structure.pieces.PieceGeneratorSupplier;
 import net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 
 import java.util.*;
 
-public class GenericNetherJigsawStructure extends GenericJigsawStructure {
+public class NetherJigsawStructure extends JigsawStructure {
 
-    public static final Codec<GenericNetherJigsawStructure> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            GenericNetherJigsawStructure.settingsCodec(instance),
+    public static final Codec<NetherJigsawStructure> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            NetherJigsawStructure.settingsCodec(instance),
             StructureTemplatePool.CODEC.fieldOf("start_pool").forGetter(structure -> structure.startPool),
             Codec.intRange(0, 30).fieldOf("size").forGetter(structure -> structure.size),
             Codec.INT.optionalFieldOf("min_y_allowed").forGetter(structure -> structure.minYAllowed),
@@ -40,25 +38,25 @@ public class GenericNetherJigsawStructure extends GenericJigsawStructure {
             Codec.intRange(0, 100).optionalFieldOf("ledge_offset_y").forGetter(structure -> structure.ledgeOffsetY),
             StringRepresentable.fromEnum(LAND_SEARCH_DIRECTION::values).fieldOf("land_search_direction").forGetter(structure -> structure.searchDirection),
             Codec.BOOL.fieldOf("use_bounding_box_hack").orElse(false).forGetter(structure -> structure.useBoundingBoxHack)
-    ).apply(instance, GenericNetherJigsawStructure::new));
+    ).apply(instance, NetherJigsawStructure::new));
 
     public final Optional<Integer> ledgeOffsetY;
     public final LAND_SEARCH_DIRECTION searchDirection;
 
-    public GenericNetherJigsawStructure(Structure.StructureSettings config,
-                                        Holder<StructureTemplatePool> startPool,
-                                        int size,
-                                        Optional<Integer> minYAllowed,
-                                        Optional<Integer> maxYAllowed,
-                                        Optional<Integer> allowedYRangeFromStart,
-                                        HeightProvider startHeight,
-                                        boolean cannotSpawnInLiquid,
-                                        Optional<Integer> biomeRadius,
-                                        HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
-                                        Optional<Integer> maxDistanceFromCenter,
-                                        Optional<Integer> ledgeOffsetY,
-                                        LAND_SEARCH_DIRECTION searchDirection,
-                                        boolean useBoundingBoxHack) {
+    public NetherJigsawStructure(Structure.StructureSettings config,
+                                 Holder<StructureTemplatePool> startPool,
+                                 int size,
+                                 Optional<Integer> minYAllowed,
+                                 Optional<Integer> maxYAllowed,
+                                 Optional<Integer> allowedYRangeFromStart,
+                                 HeightProvider startHeight,
+                                 boolean cannotSpawnInLiquid,
+                                 Optional<Integer> biomeRadius,
+                                 HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
+                                 Optional<Integer> maxDistanceFromCenter,
+                                 Optional<Integer> ledgeOffsetY,
+                                 LAND_SEARCH_DIRECTION searchDirection,
+                                 boolean useBoundingBoxHack) {
         super(config,
                 startPool,
                 size,

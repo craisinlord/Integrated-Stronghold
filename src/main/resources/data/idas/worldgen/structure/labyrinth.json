@@ -1,5 +1,5 @@
 {
-  "type": "idas:idas_jigsaw_structure",
+  "type": "idas:idas_structure",
   "start_pool": "idas:labyrinth/labyrinth_entrance",
   "size": 3,
   "terrain_height_radius_check": 1,
