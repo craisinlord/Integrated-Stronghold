@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "idas:bazaar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 169481694,
+    "spacing": 20,
+    "separation": 15,
+    "type": "idas:advanced_random_spread",
+    "super_exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "#idas:bazaar_avoid"
+    }
+  }
+}

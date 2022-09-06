@@ -8,8 +8,9 @@
   "step": "surface_structures",
   "land_search_direction": "HIGHEST_LAND",
   "terrain_adaptation": "none",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "start_height": {
-    "absolute": 80
+    "absolute": 70
   },
   "use_bounding_box_hack": true,
   "spawn_overrides": {

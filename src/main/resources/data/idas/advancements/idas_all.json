@@ -1,0 +1,100 @@
+{
+  "parent": "idas:idas_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate": "Adventurer and Dungeon Buster Extraordinaire"
+    },
+    "description": {
+      "translate": "Visit Every IDAS Structure"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "criteria": {
+    "in_labyrinth": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:labyrinth"
+      }
+    },
+    "in_pillager_fortress": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:pillager_fortress"
+      }
+    },
+    "in_castle": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:abandonedhouse"
+      }
+    },
+    "in_cottage": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:cottage"
+      }
+    },
+    "in_brickhouse": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:brickhouse"
+      }
+    },
+    "in_wizardtower": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:wizardtower"
+      }
+    },
+    "in_enchantingtower": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:enchantingtower"
+      }
+    },
+    "in_hauntedhouse": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "idas:hauntedhouse"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_labyrinth"
+    ],
+    [
+      "in_pillager_fortress"
+    ],
+    [
+      "in_castle"
+    ],
+    [
+      "in_abandonedhouse"
+    ],
+    [
+      "in_brickhouse"
+    ],
+    [
+      "in_wizardtower"
+    ],
+    [
+      "in_enchantingtower"
+    ],
+    [
+      "in_hauntedhouse"
+    ],
+    [
+      "in_cottage"
+    ]
+  ]
+}
