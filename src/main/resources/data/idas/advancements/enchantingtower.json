@@ -21,7 +21,17 @@
     "in_enchantingtower": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:enchantingtower"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:enchantingtower"
+              }
+            }
+          }
+        ]
       }
     }
   },

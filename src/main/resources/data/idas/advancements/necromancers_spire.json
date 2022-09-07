@@ -21,7 +21,17 @@
     "in_necromancers_spire": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:necromancers_spire"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:necromancers_spire"
+              }
+            }
+          }
+        ]
       }
     }
   },

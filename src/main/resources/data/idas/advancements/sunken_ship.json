@@ -2,13 +2,13 @@
   "parent": "idas:idas_root",
   "display": {
     "icon": {
-      "item": "alexsmobs:bear_fur"
+      "item": "alexsmobs:skelewag_sword"
     },
     "title": {
-      "translate": "The Bearclaw Inn"
+      "translate": "A Sunken Ship"
     },
     "description": {
-      "translate": "An Inn for a Weary Traveler"
+      "translate": "A Captain Always Goes Down With Their Ship..."
     },
     "show_toast": true,
     "announce_to_chat": true,
@@ -18,16 +18,26 @@
     "experience": 50
   },
   "criteria": {
-    "in_bearclaw_inn": {
+    "in_sunken_ship": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:bearclaw_inn"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:sunken_ship"
+              }
+            }
+          }
+        ]
       }
     }
   },
   "requirements": [
     [
-      "in_bearclaw_inn"
+      "in_sunken_ship"
     ]
   ]
 }

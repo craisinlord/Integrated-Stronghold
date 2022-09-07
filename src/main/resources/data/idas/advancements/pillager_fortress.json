@@ -22,7 +22,17 @@
     "in_pillager_fortress": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:pillager_fortress"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:pillager_fortress"
+              }
+            }
+          }
+        ]
       }
     }
   },

@@ -22,7 +22,17 @@
     "in_tinkers_workshop": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:tinkers_workshop"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:tinkers_workshop"
+              }
+            }
+          }
+        ]
       }
     }
   },

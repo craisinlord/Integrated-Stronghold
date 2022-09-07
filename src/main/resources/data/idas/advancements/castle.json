@@ -21,7 +21,17 @@
     "in_castle": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:castle"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:castle"
+              }
+            }
+          }
+        ]
       }
     }
   },

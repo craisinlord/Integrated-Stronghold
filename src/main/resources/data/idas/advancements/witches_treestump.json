@@ -21,7 +21,17 @@
     "in_witches_treestump": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:witches_treestump"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:witches_treestump"
+              }
+            }
+          }
+        ]
       }
     }
   },

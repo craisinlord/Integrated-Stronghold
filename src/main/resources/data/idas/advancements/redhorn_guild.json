@@ -21,7 +21,17 @@
     "in_redhorn_guild": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:redhorn_guild"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:redhorn_guild"
+              }
+            }
+          }
+        ]
       }
     }
   },

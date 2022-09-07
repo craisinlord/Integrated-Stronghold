@@ -21,7 +21,17 @@
     "in_fishermans_lodge": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:fishermans_lodge"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:fishermans_lodge"
+              }
+            }
+          }
+        ]
       }
     }
   },

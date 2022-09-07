@@ -22,7 +22,17 @@
     "in_ancient_mines": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:ancient_mines"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:ancient_mines"
+              }
+            }
+          }
+        ]
       }
     }
   },

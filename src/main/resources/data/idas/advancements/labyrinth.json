@@ -22,7 +22,17 @@
     "in_labyrinth": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:labyrinth"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:labyrinth"
+              }
+            }
+          }
+        ]
       }
     }
   },

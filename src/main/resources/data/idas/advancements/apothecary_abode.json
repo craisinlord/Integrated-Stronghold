@@ -21,7 +21,17 @@
     "in_apothecary_abode": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:apothecary_abode"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:apothecary_abode"
+              }
+            }
+          }
+        ]
       }
     }
   },

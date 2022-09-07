@@ -21,7 +21,17 @@
     "in_hunters_cabin": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:hunters_cabin"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:hunters_cabin"
+              }
+            }
+          }
+        ]
       }
     }
   },

@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "idas:nether_ancient_portal",
+      "structure": "idas:necromancers_spire",
       "weight": 1
     }
   ],
@@ -11,7 +11,7 @@
     "separation": 20,
     "type": "idas:advanced_random_spread",
     "super_exclusion_zone": {
-      "chunk_count": 5,
+      "chunk_count": 10,
       "other_set": "#idas:necromancers_spire_avoid"
     }
   }

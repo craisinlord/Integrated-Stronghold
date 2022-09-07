@@ -15,13 +15,23 @@
     "hidden": false
   },
   "rewards": {
-    "experience": 100
+    "experience": 50
   },
   "criteria": {
     "in_wizardtower": {
       "trigger": "minecraft:location",
       "conditions": {
-        "feature": "idas:wizardtower"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "idas:wizardtower"
+              }
+            }
+          }
+        ]
       }
     }
   },
