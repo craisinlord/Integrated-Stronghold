@@ -57,11 +57,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "create:honey_bucket"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:lava_bucket"
         },
@@ -69,6 +64,20 @@
           "type": "minecraft:item",
           "weight": 5,
           "name": "create:builders_tea"
+        },
+        {
+          "type": "item",
+          "name": "alexsmobs:ghostly_pickaxe",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                 "min": 0.3,
+                 "max": 0.7
+              }
+            }
+          ]
         }
       ]
     },

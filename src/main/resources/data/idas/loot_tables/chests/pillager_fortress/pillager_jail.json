@@ -51,7 +51,7 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
@@ -193,20 +193,6 @@
               "limit": {
                 "min": 2,
                 "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "quark:golden_frog_leg",
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 3,
-                "max": 10
               }
             }
           ]

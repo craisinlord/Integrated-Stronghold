@@ -265,20 +265,6 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "quark:golden_frog_leg",
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 3,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:glow_ink_sac",
           "functions": [
             {

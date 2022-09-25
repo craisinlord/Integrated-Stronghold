@@ -6,11 +6,11 @@
   "allowed_terrain_height_range": 15,
   "biomes": "#idas:has_structure/ancient_mines_biomes",
   "step": "surface_structures",
-  "land_search_direction": "HIGHEST_LAND",
-  "terrain_adaptation": "none",
+  "terrain_adaptation": "beard_thin",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "land_search_direction": "HIGHEST_LAND",
   "start_height": {
-    "absolute": 70
+    "absolute": 0
   },
   "use_bounding_box_hack": true,
   "spawn_overrides": {
@@ -25,6 +25,12 @@
         },
         {
           "type": "quark:wraith",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "type": "alexsmobs:underminer",
           "weight": 1,
           "minCount": 1,
           "maxCount": 1
