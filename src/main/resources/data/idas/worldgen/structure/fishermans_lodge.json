@@ -2,15 +2,13 @@
   "type": "idas:idas_structure",
   "start_pool": "idas:fishermans_lodge/fishermans_lodge",
   "size": 1,
-  "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 15,
   "valid_biome_radius_check": 1,
   "biomes": "#idas:has_structure/fishermans_lodge_biomes",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "start_height": {
-    "absolute": 0
+    "absolute": -15
   },
   "spawn_overrides": {}
 }

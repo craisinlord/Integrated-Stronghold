@@ -11,7 +11,7 @@
     "separation": 15,
     "type": "idas:advanced_random_spread",
     "super_exclusion_zone": {
-      "chunk_count": 3,
+      "chunk_count": 9,
       "other_set": "#idas:cottage_avoid"
     }
   }

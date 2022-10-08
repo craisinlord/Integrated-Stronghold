@@ -3,7 +3,6 @@
   "start_pool": "idas:abandonedhouse",
   "size": 1,
   "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 15,
   "valid_biome_radius_check": 1,
   "biomes": "#idas:has_structure/abandonedhouse_biomes",
   "step": "surface_structures",

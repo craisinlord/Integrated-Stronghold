@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.levelgen.structure.StructureSet;
 import net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement;
 import net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType;
+import net.minecraft.world.level.levelgen.structure.placement.StructurePlacement;
 import net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType;
 
 import java.util.Optional;
@@ -20,10 +21,10 @@ import java.util.Optional;
 public class AdvancedRandomSpread extends RandomSpreadStructurePlacement {
     public static final Codec<AdvancedRandomSpread> CODEC = RecordCodecBuilder.create((instance) -> instance.group(
             Vec3i.offsetCodec(16).optionalFieldOf("locate_offset", Vec3i.ZERO).forGetter(AdvancedRandomSpread::locateOffset),
-            FrequencyReductionMethod.CODEC.optionalFieldOf("frequency_reduction_method", FrequencyReductionMethod.DEFAULT).forGetter(AdvancedRandomSpread::frequencyReductionMethod),
+            StructurePlacement.FrequencyReductionMethod.CODEC.optionalFieldOf("frequency_reduction_method", StructurePlacement.FrequencyReductionMethod.DEFAULT).forGetter(AdvancedRandomSpread::frequencyReductionMethod),
             Codec.floatRange(0.0F, 1.0F).optionalFieldOf("frequency", 1.0F).forGetter(AdvancedRandomSpread::frequency),
             ExtraCodecs.NON_NEGATIVE_INT.fieldOf("salt").forGetter(AdvancedRandomSpread::salt),
-            ExclusionZone.CODEC.optionalFieldOf("exclusion_zone").forGetter(AdvancedRandomSpread::exclusionZone),
+            StructurePlacement.ExclusionZone.CODEC.optionalFieldOf("exclusion_zone").forGetter(AdvancedRandomSpread::exclusionZone),
             SuperExclusionZone.CODEC.optionalFieldOf("super_exclusion_zone").forGetter(AdvancedRandomSpread::superExclusionZone),
             Codec.intRange(0, Integer.MAX_VALUE).fieldOf("spacing").forGetter(AdvancedRandomSpread::spacing),
             Codec.intRange(0, Integer.MAX_VALUE).fieldOf("separation").forGetter(AdvancedRandomSpread::separation),
@@ -38,7 +39,7 @@ public class AdvancedRandomSpread extends RandomSpreadStructurePlacement {
     private final Optional<SuperExclusionZone> superExclusionZone;
 
     public AdvancedRandomSpread(Vec3i locationOffset,
-                                FrequencyReductionMethod frequencyReductionMethod,
+                                StructurePlacement.FrequencyReductionMethod frequencyReductionMethod,
                                 float frequency,
                                 int salt,
                                 Optional<ExclusionZone> exclusionZone,
@@ -57,7 +58,7 @@ public class AdvancedRandomSpread extends RandomSpreadStructurePlacement {
 
         if (spacing <= separation) {
             throw new RuntimeException("""
-                IDAS: Spacing cannot be less or equal to separation.
+                Repurposed Structures: Spacing cannot be less or equal to separation.
                 Please correct this error as there's no way to spawn this structure properly
                     Spacing: %s
                     Separation: %s.
@@ -130,10 +131,10 @@ public class AdvancedRandomSpread extends RandomSpreadStructurePlacement {
     }
 
     public record SuperExclusionZone(HolderSet<StructureSet> otherSet, int chunkCount) {
-        public static final Codec<SuperExclusionZone> CODEC = RecordCodecBuilder.create(builder -> builder.group(
-                RegistryCodecs.homogeneousList(Registry.STRUCTURE_SET_REGISTRY, StructureSet.DIRECT_CODEC).fieldOf("other_set").forGetter(SuperExclusionZone::otherSet),
-                Codec.intRange(1, 16).fieldOf("chunk_count").forGetter(SuperExclusionZone::chunkCount)
-        ).apply(builder, SuperExclusionZone::new));
+        public static final Codec<AdvancedRandomSpread.SuperExclusionZone> CODEC = RecordCodecBuilder.create(builder -> builder.group(
+                RegistryCodecs.homogeneousList(Registry.STRUCTURE_SET_REGISTRY, StructureSet.DIRECT_CODEC).fieldOf("other_set").forGetter(AdvancedRandomSpread.SuperExclusionZone::otherSet),
+                Codec.intRange(1, 16).fieldOf("chunk_count").forGetter(AdvancedRandomSpread.SuperExclusionZone::chunkCount)
+        ).apply(builder, AdvancedRandomSpread.SuperExclusionZone::new));
 
         boolean isPlacementForbidden(ChunkGenerator chunkGenerator, RandomState randomState, long l, int i, int j) {
             for (Holder<StructureSet> holder : this.otherSet) {

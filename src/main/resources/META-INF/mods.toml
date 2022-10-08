@@ -23,7 +23,7 @@ Integrated Dungeons and Structures (aka IDAS) is a mod that adds heavily detaile
 [[dependencies.idas]]
     modId="forge"
     mandatory=true
-    versionRange="[41.0.0,)"
+    versionRange="[43.1.0,)"
 
 [[dependencies.idas]]
     modId="quark"

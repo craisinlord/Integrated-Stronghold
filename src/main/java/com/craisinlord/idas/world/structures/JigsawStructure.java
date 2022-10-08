@@ -30,14 +30,6 @@ import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 import java.util.*;
 
 public class JigsawStructure extends Structure {
-    public static final Codec<ModStructureStart> CODEC_S = RecordCodecBuilder.<ModStructureStart>mapCodec(instance ->
-            instance.group(
-                    Codec.STRING.fieldOf("modId").forGetter(ModStructureStart::modId),
-                    ResourceLocation.CODEC.fieldOf("start").forGetter(ModStructureStart::start)
-            ).apply(instance, ModStructureStart::new)).codec();
-
-    public static record ModStructureStart(String modId, ResourceLocation start) {
-    }
 
     public static final Codec<JigsawStructure> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             JigsawStructure.settingsCodec(instance),
@@ -75,21 +67,21 @@ public class JigsawStructure extends Structure {
     public final boolean useBoundingBoxHack;
 
     public JigsawStructure(Structure.StructureSettings config,
-                           Holder<StructureTemplatePool> startPool,
-                           int size,
-                           Optional<Integer> minYAllowed,
-                           Optional<Integer> maxYAllowed,
-                           Optional<Integer> allowedYRangeFromStart,
-                           HeightProvider startHeight,
-                           Optional<Heightmap.Types> projectStartToHeightmap,
-                           boolean cannotSpawnInLiquid,
-                           Optional<Integer> terrainHeightCheckRadius,
-                           Optional<Integer> allowedTerrainHeightRange,
-                           Optional<Integer> biomeRadius,
-                           HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
-                           Optional<Integer> maxDistanceFromCenter,
-                           Optional<BURYING_TYPE> buryingType,
-                           boolean useBoundingBoxHack)
+                                  Holder<StructureTemplatePool> startPool,
+                                  int size,
+                                  Optional<Integer> minYAllowed,
+                                  Optional<Integer> maxYAllowed,
+                                  Optional<Integer> allowedYRangeFromStart,
+                                  HeightProvider startHeight,
+                                  Optional<Heightmap.Types> projectStartToHeightmap,
+                                  boolean cannotSpawnInLiquid,
+                                  Optional<Integer> terrainHeightCheckRadius,
+                                  Optional<Integer> allowedTerrainHeightRange,
+                                  Optional<Integer> biomeRadius,
+                                  HashSet<ResourceLocation> poolsThatIgnoreBoundaries,
+                                  Optional<Integer> maxDistanceFromCenter,
+                                  Optional<BURYING_TYPE> buryingType,
+                                  boolean useBoundingBoxHack)
     {
         super(config);
         this.startPool = startPool;
@@ -110,7 +102,7 @@ public class JigsawStructure extends Structure {
 
         if (maxYAllowed.isPresent() && minYAllowed.isPresent() && maxYAllowed.get() < minYAllowed.get()) {
             throw new RuntimeException("""
-                IDAS: maxYAllowed cannot be less than minYAllowed.
+                Repurposed Structures: maxYAllowed cannot be less than minYAllowed.
                 Please correct this error as there's no way to spawn this structure properly
                     Structure pool of problematic structure: %s
             """.formatted(startPool.get().getName()));
@@ -158,7 +150,7 @@ public class JigsawStructure extends Structure {
 
             for (int curChunkX = chunkPos.x - terrainCheckRange; curChunkX <= chunkPos.x + terrainCheckRange; curChunkX++) {
                 for (int curChunkZ = chunkPos.z - terrainCheckRange; curChunkZ <= chunkPos.z + terrainCheckRange; curChunkZ++) {
-                    int height = context.chunkGenerator().getBaseHeight((curChunkX << 4) + 7, (curChunkZ << 4) + 7, Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor(), context.randomState());
+                    int height = context.chunkGenerator().getBaseHeight((curChunkX << 4) + 7, (curChunkZ << 4) + 7, this.projectStartToHeightmap.orElse(Heightmap.Types.WORLD_SURFACE_WG), context.heightAccessor(), context.randomState());
                     maxTerrainHeight = Math.max(maxTerrainHeight, height);
                     minTerrainHeight = Math.min(minTerrainHeight, height);
 
