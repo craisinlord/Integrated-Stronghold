@@ -8,6 +8,14 @@
       "required": false
     },
     {
+      "id": "terralith:highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:steppe",
+      "required": false
+    },
+    {
       "id": "forge:plains",
       "required": false
     },

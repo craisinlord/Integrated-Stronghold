@@ -3,6 +3,14 @@
   "values": [
     "minecraft:meadow",
     {
+      "id": "terralith:blooming_plateau",
+      "required": false
+    },
+    {
+      "id": "terralith:blooming_valley",
+      "required": false
+    },
+    {
       "id": "biomesoplenty:field",
       "required": false
     },

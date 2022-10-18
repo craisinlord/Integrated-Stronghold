@@ -11,6 +11,14 @@
       "required": false
     },
     {
+      "id": "terralith:sakura_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:sakura_grove",
+      "required": false
+    },
+    {
       "id": "byg:cherry_blossom_forest",
       "required": false
     },
