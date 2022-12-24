@@ -2,35 +2,35 @@
   "structures": [
     {
       "structure": "idas:abandonedhouse",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:bearclaw_inn",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:hermits_hollow",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:hunters_cabin",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:castle",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:brickhouse",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:enchantingtower",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:wizardtower",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:redhorn_guild",
@@ -38,15 +38,15 @@
     },
     {
       "structure": "idas:beekeepers_house",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:farmhouse",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:hauntedhouse",
-      "weight": 1
+      "weight": 2
     },
     {
       "structure": "idas:witches_treestump",
@@ -54,13 +54,21 @@
     },
     {
       "structure": "idas:fishermans_lodge",
+      "weight": 2
+    },
+    {
+      "structure": "idas:haunted_manor",
       "weight": 1
+    },
+    {
+      "structure": "idas:winter_wagon",
+      "weight": 2
     }
   ],
   "placement": {
     "salt": 169480670,
-    "spacing": 15,
-    "separation": 7,
+    "spacing": 20,
+    "separation": 10,
     "type": "idas:advanced_random_spread",
     "super_exclusion_zone": {
       "chunk_count": 9,

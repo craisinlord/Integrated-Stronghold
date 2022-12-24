@@ -3,22 +3,32 @@
     "minecraft:cartographer": [
       {
         "tradeLevel": 1,
+        "structure": "idas:winter_wagon",
+        "mapName": "Winter Wagon Map",
+        "mapIcon": "BANNER_GREEN",
+        "emeraldsRequired": 15,
+        "tradesAllowed": 2,
+        "xpReward": 10,
+        "spawnRegionSearchRadius": 100
+      },
+      {
+        "tradeLevel": 1,
+        "structure": "idas:haunted_manor",
+        "mapName": "Haunted Manor Map",
+        "mapIcon": "BANNER_BLACK",
+        "emeraldsRequired": 15,
+        "tradesAllowed": 2,
+        "xpReward": 10,
+        "spawnRegionSearchRadius": 100
+      },
+      {
+        "tradeLevel": 1,
         "structure": "idas:castle",
         "mapName": "Castle Map",
         "mapIcon": "BANNER_CYAN",
         "emeraldsRequired": 15,
         "tradesAllowed": 2,
-        "xpReward": 100,
-        "spawnRegionSearchRadius": 100
-      },
-      {
-        "tradeLevel": 1,
-        "structure": "idas:wizardtower",
-        "mapName": "Wizard Tower Map",
-        "mapIcon": "BANNER_PURPLE",
-        "emeraldsRequired": 15,
-        "tradesAllowed": 2,
-        "xpReward": 100,
+        "xpReward": 10,
         "spawnRegionSearchRadius": 100
       },
       {
@@ -28,17 +38,7 @@
         "mapIcon": "BANNER_GRAY",
         "emeraldsRequired": 15,
         "tradesAllowed": 2,
-        "xpReward": 100,
-        "spawnRegionSearchRadius": 100
-      },
-      {
-        "tradeLevel": 1,
-        "structure": "idas:hermits_hollow",
-        "mapName": "Hermit's Hollow Map",
-        "mapIcon": "BANNER_BROWN",
-        "emeraldsRequired": 15,
-        "tradesAllowed": 2,
-        "xpReward": 100,
+        "xpReward": 10,
         "spawnRegionSearchRadius": 100
       },
       {

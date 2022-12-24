@@ -1,18 +1,22 @@
 {
   "structures": [
     {
+      "structure": "idas:pillager_fortress",
+      "weight": 1
+    },
+    {
       "structure": "idas:tinkers_workshop",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 169480693,
-    "spacing": 50,
-    "separation": 30,
+    "salt": 169480678,
+    "spacing": 55,
+    "separation": 35,
     "type": "idas:advanced_random_spread",
     "super_exclusion_zone": {
       "chunk_count": 9,
-      "other_set": "#idas:tinkers_workshop_avoid"
+      "other_set": "#idas:idas_rare_avoid"
     }
   }
 }
