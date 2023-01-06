@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "idas:ancient_portal",
+      "structure": "idas:ancient_portal/ancient_portal",
       "weight": 1
     }
   ],

@@ -5,7 +5,7 @@
   "terrain_height_radius_check": 1,
   "allowed_terrain_height_range": 15,
   "valid_biome_radius_check": 1,
-  "biomes": "#idas:has_structure/labyrinth_biomes",
+  "biomes": "#idas:has_structure/desert_biomes",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",

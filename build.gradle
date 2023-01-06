@@ -109,7 +109,7 @@ dependencies {
 
     runtimeOnly fg.deobf("curse.maven:create-${create_curseforge_id}:${create_curseforge_file_id}")
     ///runtimeOnly fg.deobf("curse.maven:flywheel-${flywheel_curseforge_id}:${flywheel_curseforge_file_id}")
-    ///runtimeOnly fg.deobf("curse.maven:byg-${byg_curseforge_id}:${byg_curseforge_file_id}")
+    runtimeOnly fg.deobf("curse.maven:byg-${byg_curseforge_id}:${byg_curseforge_file_id}")
 }
 
 

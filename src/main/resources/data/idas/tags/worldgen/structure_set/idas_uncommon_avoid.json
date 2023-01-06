@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "idas:labyrinth",
+    "idas:pillager_fortress",
+    "idas:wizard_tower",
+    "idas:enchantingtower",
+    "idas:castle",
+    "idas:cottage",
+    "idas:brickhouse",
+    "idas:hauntedhouse",
+    "idas:abandonedhouse",
+    "idas:ancient_mines",
+    "idas:bearclaw_inn",
+    "idas:hunters_cabin",
+    "idas:farmhouse",
+    "idas:witches_treestump",
+    "idas:hermits_hollow", 
+    "idas:fishermans_lodge",
+    "idas:redhorn_guild",
+    "idas:beekeepers_house",
+    "idas:tinkers_workshop",
+    "idas:ancient_portal",
+    "idas:nether_ancient_portal",
+    "idas:bazaar",
+    "minecraft:villages"
+  ]
+}

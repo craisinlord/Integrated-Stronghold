@@ -11,8 +11,8 @@
   ],
   "placement": {
     "salt": 169480678,
-    "spacing": 55,
-    "separation": 35,
+    "spacing": 60,
+    "separation": 40,
     "type": "idas:advanced_random_spread",
     "super_exclusion_zone": {
       "chunk_count": 9,

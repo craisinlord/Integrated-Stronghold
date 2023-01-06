@@ -10,8 +10,8 @@
       "translate": "Start exploring for structures!"
     },
     "show_toast": false,
-    "announce_to_chat": false,
-    "hidden": true,
+    "announce_to_chat": true,
+    "hidden": false,
     "background": "minecraft:textures/block/purple_terracotta.png"
   },
   "criteria": {

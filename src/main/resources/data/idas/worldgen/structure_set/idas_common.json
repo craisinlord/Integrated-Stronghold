@@ -29,7 +29,7 @@
       "weight": 2
     },
     {
-      "structure": "idas:wizardtower",
+      "structure": "idas:wizard_tower",
       "weight": 2
     },
     {
@@ -54,14 +54,6 @@
     },
     {
       "structure": "idas:fishermans_lodge",
-      "weight": 2
-    },
-    {
-      "structure": "idas:haunted_manor",
-      "weight": 1
-    },
-    {
-      "structure": "idas:winter_wagon",
       "weight": 2
     }
   ],

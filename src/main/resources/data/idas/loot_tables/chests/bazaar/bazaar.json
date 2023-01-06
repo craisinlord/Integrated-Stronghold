@@ -35,6 +35,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 5,
+          "name": "idas:music_disc_calidum"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:golden_carrot"
         },

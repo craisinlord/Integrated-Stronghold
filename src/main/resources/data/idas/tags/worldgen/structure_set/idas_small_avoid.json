@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:villages",
+    "idas:abandonedhouse",
+    "idas:ancient_mines",
+    "idas:apothecary_abode",
+    "idas:bearclaw_inn",
+    "idas:beekeepers_house",
+    "idas:brickhouse",
+    "idas:castle",
+    "idas:enchantingtower",
+    "idas:farmhouse",
+    "idas:fishermans_lodge",
+    "idas:hauntedhouse",
+    "idas:hermits_hollow",
+    "idas:hunters_cabin",
+    "idas:labyrinth",
+    "idas:pillager_fortress",
+    "idas:redhorn_guild",
+    "idas:sunken_ship",
+    "idas:sunken_ship_coral",
+    "idas:treetop_tavern",
+    "idas:witches_treestump",
+    "idas:wizard_tower",
+    "idas:haunted_manor",
+    "idas:winter_wagon"
+  ]
+}

@@ -3,7 +3,7 @@
   "start_pool": "idas:beekeepers_house/beekeepers_house",
   "size": 3,
   "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 15,
+  "allowed_terrain_height_range": 10,
   "valid_biome_radius_check": 1,
   "biomes": "#idas:has_structure/beekeepers_house_biomes",
   "step": "surface_structures",
