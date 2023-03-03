@@ -1,0 +1,1062 @@
+{
+  "type": "minecraft:chest",
+  "pools": [    
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"     a    <-->   ᔑ\n\\\"},
+                {\\\"text\\\":\\\"     b    <-->   ʖ\n\\\"},
+                {\\\"text\\\":\\\"     c    <-->   ᓵ\n\\\"},
+                {\\\"text\\\":\\\"     d    <-->   ↸\n\\\"},
+                {\\\"text\\\":\\\"     e    <-->   ᒷ\n\\\"},
+                {\\\"text\\\":\\\"     f    <-->   ⎓\n\\\"},
+                {\\\"text\\\":\\\"     g    <-->   ⊣\n\\\"},
+                {\\\"text\\\":\\\"     h    <-->   ⍑\n\\\"},
+                {\\\"text\\\":\\\"      i    <-->   ╎\n\\\"},
+                {\\\"text\\\":\\\"     j    <-->   ⋮\n\\\"},
+                {\\\"text\\\":\\\"     k    <-->   ꖌ\n\\\"},
+                {\\\"text\\\":\\\"      l    <-->   ꖎ\n\\\"},
+                {\\\"text\\\":\\\"     m    <-->   ᒲ\n\\\"},
+                {\\\"text\\\":\\\"     n    <-->   リ\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"     o    <-->   𝙹\n\\\"},
+                {\\\"text\\\":\\\"     p    <-->   !¡\n\\\"},
+                {\\\"text\\\":\\\"     q    <-->   ᑑ\n\\\"},
+                {\\\"text\\\":\\\"     r    <-->   ∷\n\\\"},
+                {\\\"text\\\":\\\"     s    <-->   ᓭ\n\\\"},
+                {\\\"text\\\":\\\"     t    <-->   ℸ\n\\\"},
+                {\\\"text\\\":\\\"     u    <-->   ⚍\n\\\"},
+                {\\\"text\\\":\\\"     v    <-->   ⍊\n\\\"},
+                {\\\"text\\\":\\\"     w    <-->   ∴\n\\\"},
+                {\\\"text\\\":\\\"     x    <-->   ̇/\n\\\"},
+                {\\\"text\\\":\\\"     y    <-->   ||\n\\\"},
+                {\\\"text\\\":\\\"     z    <-->   ⨅\\\"}
+              ]\"
+            ],
+            title:Redstone,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "The Translator",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lUnderground Farming\n\n\\\"},
+                {\\\"text\\\":\\\"Since migrating underground, we have had the need to farm produce underground to supply food to our people. \\\"},
+                {\\\"text\\\":\\\"Throughout the hundreds of years we have lived here, we have been perfecting the skill of underground farming.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Farming traditionally requires water and sunlight, both of which can be a problem underground. \\\"},
+                {\\\"text\\\":\\\"To get the crops properly hydrated, we created fluid tanks and pipes \\\"},
+                {\\\"text\\\":\\\"that transport water from waterlogged caves around the area into our farming areas.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"These pipes are typically made of copper, and require rotational force to be operated.\n\\\"},
+                {\\\"text\\\":\\\"The problem of sunlight was easier to address than water. \\\"},
+                {\\\"text\\\":\\\"The installation of light sources such as lamps properly heated and illuminated the crops.\\\"}
+              ]\"
+            ],
+            title:Farming,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Underground Farming Handbook",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lRedstone for Dummies\n\\\"},
+                {\\\"text\\\":\\\"§lBy \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"Hey dummies! You want to learn how to use Redstone \\\"},
+                {\\\"text\\\":\\\"to create marvelous contraptions? You’re in the right spot!\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"You can obtain redstone dust by mining redstone ore. \\\"},
+                {\\\"text\\\":\\\"You can spread this dust across the ground as wire, attach it to levers or doors, \\\"},
+                {\\\"text\\\":\\\"and craft it into torches and repeaters to build machines. \\\"},
+                {\\\"text\\\":\\\"Whether you want a lever that performs two tasks at a time, \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"a combination lock, or a more complex circuit, \\\"},
+                {\\\"text\\\":\\\"you can build it by cleverly arranging redstone dust.\n\n\\\"},
+                {\\\"text\\\":\\\"That’s all you need to know about redstone! Have fun engineering!\\\"}
+              ]\"
+            ],
+            title:Redstone,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Redstone for Dummies",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lEnchanting: A Complete History\n\\\"},
+                {\\\"text\\\":\\\"§lBy \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"Enchanting is a magical practice used to enhance our tools, weapons, and armor. \\\"},
+                {\\\"text\\\":\\\"An enchantment can not only give your item new features, \\\"},
+                {\\\"text\\\":\\\"but it can also push its existing ability to a whole new level.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Enchanting was discovered and perfected right here in this Stronghold. \\\"},
+                {\\\"text\\\":\\\"Enchant an item at an Enchanting Table. \\\"},
+                {\\\"text\\\":\\\"The more knowledge and experience you have, the stronger the enchants will be. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Harness the magic of enchanting through the language of enchantment. \\\"},
+                {\\\"text\\\":\\\"A direct translation guide between it and the common tongue can be found right here in the Grand Library! \\\"}
+              ]\"
+            ],
+            title:Enchanting,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Enchanting: A Complete History",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED's \\\"},
+                {\\\"text\\\":\\\"§lGuide to Architecture and Design\n\n\\\"},
+                {\\\"text\\\":\\\"Architecture and design is the pride of our people. \\\"},
+                {\\\"text\\\":\\\"It is our mission to create detailed and intricate designs in our builds, and to create wonders throughout the world.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"In this guide I will teach you about specific techniques and things to keep in mind while achieving excellence in the art of architecture and design.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lDetail through Depth\n\\\"},
+                {\\\"text\\\":\\\"One of the best ways to achieve detail in builds is depth. Depth can transform a stone or wooden box into something magnificent and unique. \\\"},
+                {\\\"text\\\":\\\"Methods of adding depth include setting parts of a wall back or forward, adding pillars, \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"archways, walls, stairs, and slabs. You rarely have too much depth. If a wall or part of a build seems boring, the first thing you should do is try adding more depth. \\\"},
+                {\\\"text\\\":\\\"Stairs and slab trims around walls can help break it up. One can also add the illusion of depth through trims.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Trims are lines of blocks at the bottom, top or even through the middle of builds. \\\"},
+                {\\\"text\\\":\\\"If they are darker at the bottom, this can provide the illusion of shadow, making it feel more detailed and less bland.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lGradients\n\\\"},
+                {\\\"text\\\":\\\"Another way to make your builds unique and interesting is gradients. A gradient is a mix of colors that slowly works from one color to another. \\\"},
+                {\\\"text\\\":\\\"An example of this is the gradient formed when mixing blackstone to deepslate to regular stone. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"You can also use more colorful gradients. Try making your own color gradients, I find it super fun to try to use more unique gradients in builds!\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lEye lines\n\\\"},
+                {\\\"text\\\":\\\"One really important thing to keep in mind while building is eye lines. Where is the viewer going to come into the build? \\\"},
+                {\\\"text\\\":\\\"What are they going to see first? What stands out and is going to attract their attention?\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Thinking about this while planning a build and its layout can elevate a project from a build to a work of art.\\\"}
+              ]\"
+            ],
+            title:Architecture,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Architecture and Design",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lGeodes and Corundums\n\\\"},
+                {\\\"text\\\":\\\"By §kREDACTED\n\\\"},
+                {\\\"text\\\":\\\"Geodes and Corundums are glowing, colorful rocks found in caves with magic properties. In this text, we will examine the properties of each of them.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lGeodes\n\\\"},
+                {\\\"text\\\":\\\"Geodes are spherical rocks found underground. They typically have 3 layers. The outer layer is composed of dark gray smooth basalt. \\\"},
+                {\\\"text\\\":\\\"The 2nd layer is made of a white rock, calcite. The inside is laced with amethyst, a purple gemstone.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Amethysts are a purple glowing crystal that can sprout amethyst clusters. Amethyst clusters grow in size after they bud. \\\"},
+                {\\\"text\\\":\\\"One of the most interesting properties of amethyst is their sounds. They make a very satisfying sound when interacted with.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Amethysts can also be used as a crafting ingredient. When crafted into lenses, they can be used to magnify objects. \\\"},
+                {\\\"text\\\":\\\"These lenses are often used in spy glasses.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lCorundums\n\\\"},
+                {\\\"text\\\":\\\"Corundums are colorful crystals found throughout caves. They can be almost any color. In their natural form, they will spread and grow rapidly. \\\"},
+                {\\\"text\\\":\\\"This can be prevented with wax.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"They can be crafted with runes to color them. Runes are used in enchantment to color the glint of the enchantment.\\\"}
+              ]\"
+            ],
+            title:Geodes,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Geodes and Corundums",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lFishing 101\n\\\"},
+                {\\\"text\\\":\\\"§lBy \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"In this book, I will instruct you about the best fishing strategies and describe the different styles of fishing. \\\"},
+                {\\\"text\\\":\\\"We will examine stab fishing and rod fishing in this guide.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lRod Fishing\n\\\"},
+                {\\\"text\\\":\\\"The first step to rod fishing is obtaining a fishing rod. \\\"},
+                {\\\"text\\\":\\\"They are a very simple thing to craft, and just require sticks and string. \\\"},
+                {\\\"text\\\":\\\"Once you have the rod, cast it into a body of water. You can cast into almost any size body of water, and can even cast from boats.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Next, wait for a fish. You can tell when a fish is approaching when bubbles start to move towards your bobber. \\\"},
+                {\\\"text\\\":\\\"When the bobber submerges, cast the rod up and retrieve your fish! Rod fishing is not always the most reliable,\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"but you can catch anything from leather boots to an enchanted book. \\\"},
+                {\\\"text\\\":\\\"This is the appeal of rod fishing. You never know what you're going to catch!\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lStab Fishing\n\\\"},
+                {\\\"text\\\":\\\"Stab fishing is the most effective way to catch fish, although much more difficult than rod fishing. \\\"},
+                {\\\"text\\\":\\\"You have to be a good swimmer, hold your breath, and be good with a sword or other sharp weapon. \\\"},
+                {\\\"text\\\":\\\" It is pretty much in the name, you stab the fish with your sword.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Fish can typically outswim you, so the trick is to catch them by surprise. \\\"},
+                {\\\"text\\\":\\\"You can do this by jumping in at them above water, or staying extremely still underwater and waiting for one to approach. \\\"},
+                {\\\"text\\\":\\\"This kind of fishing can be very dangerous, there is always a risk of drowning.\\\"}
+              ]\"
+            ],
+            title:Fishing,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Fishing 101",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s guide to the fiery creatures of the Nether\n\n\\\"},
+                {\\\"text\\\":\\\"The Nether is dimension beneath our own full of fire, lava, and all things hot and dangerous. \\\"},
+                {\\\"text\\\":\\\"Its inhabitants must be adapted to this precarious environment. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"We only recently got access to this dimension after the invention of the Nether Portal.\n\n\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lNether Portal\n\n\\\"},
+                {\\\"text\\\":\\\"The Nether Portal is a hollow rectangle of obsidian with a purple glowing aura. \\\"},
+                {\\\"text\\\":\\\"Once lit with items such as a flint and steel or fire charge, it will activate. \\\"},
+                {\\\"text\\\":\\\"Upon activation, when an entity goes through they are transported into the nether dimension. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lPiglins\n\n\\\"},
+                {\\\"text\\\":\\\"Piglins are a race of walking pigs living in the Nether. They like biomes such as the Nether Wastes and Crimson Forests. \\\"},
+                {\\\"text\\\":\\\"They value gold very highly and are hostile if you are not wearing any. \\\"},
+                {\\\"text\\\":\\\"Additionally, they will defend their items and attack if chests are \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"opened nearby. They are a rather intelligent species and have built massive blackstone Bastions scattered throughout the Nether. \\\"},
+                {\\\"text\\\":\\\"We must continue to treat their kind with dignity for the benefit of everyone.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lHoglins\n\n\\\"},
+                {\\\"text\\\":\\\"Hoglins are a race of large pig-like animals that are hostile to just about everything they come across. \\\"},
+                {\\\"text\\\":\\\"However, they do not attack piglins. \\\"},
+                {\\\"text\\\":\\\"They are a great source of meat and leather in the Nether dimension.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lMagma Cube\n\n\\\"},
+                {\\\"text\\\":\\\"Magma Cubes are a blob-like creature found in the basalt delta biome. \\\"},
+                {\\\"text\\\":\\\"Once slain, they split into smaller Magma Cubes. \\\"},
+                {\\\"text\\\":\\\"They are hostile, but the smallest ones will not do any harm. Their essence is a valuable potion ingredient.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lStrider\n\n\\\"},
+                {\\\"text\\\":\\\"Striders are passive creatures near lava lakes in the Nether. \\\"},
+                {\\\"text\\\":\\\"They have the incredible ability to walk on lava. Maybe this power can be utilized to navigate the fiery dimension. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lGhast\n\n\\\"},
+                {\\\"text\\\":\\\"Ghasts are screaming, flying, cubes of fiery death and destruction. They are found in Nether Wastes and Soul Sand Valleys. \\\"},
+                {\\\"text\\\":\\\"If you see one and you don’t have a ranged weapon, run away as fast as you can. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"If you can perform the daunting task of collecting its tears, they are said to possess many magical abilities.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lWraith\n\n\\\"},
+                {\\\"text\\\":\\\"The Wraith is a floating, translucent entity found in the Soul Sand Valleys. \\\"},
+                {\\\"text\\\":\\\"They are said to be a \\\"},
+                {\\\"text\\\":\\\"§kreincarnation\\\"},
+                {\\\"text\\\":\\\" of a previous being due to their familiar sounding screams.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lFoxhound\n\n\\\"},
+                {\\\"text\\\":\\\"Foxhounds are a wolf-like creature found throughout the Nether dimension. \\\"},
+                {\\\"text\\\":\\\"They are hostile initially, but with fire resistance and coal they can be domesticated.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§kSoul Vulture\n\n\\\"},
+                {\\\"text\\\":\\\"§kSoul Vultures are the withered remains of long dead birds that haunt the Nether's Soul Sand Valleys. \\\"},
+                {\\\"text\\\":\\\"§kThese undead birds can be seen circling the countless giant skeletons that litter the landscape. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§kBone Serpent\n\n\\\"},
+                {\\\"text\\\":\\\"§kThis long serpent creature appears to be made of bone and has red eyes. \\\"},
+                {\\\"text\\\":\\\"§kIt can occasionally be seen jumping out of the lava only to disappear into it again shortly after. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§kWither Skeleton\n\n\\\"},
+                {\\\"text\\\":\\\"§kWither skeletons are tall black variants of skeletons equipped with stone swords \\\"},
+                {\\\"text\\\":\\\"§kThey are found exclusively in nether fortresses \\\"}
+              ]\"
+            ],
+            title:Nether,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Creatures of the Nether",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s guide to the Undead\n\n\\\"},
+                {\\\"text\\\":\\\"Undead creatures are hostile, threatening creatures that lurk in the darkness of caves, \\\"},
+                {\\\"text\\\":\\\"the night, and even in the sky. \\\"},
+                {\\\"text\\\":\\\"If you see one and you lack an adequate weapon, run and don’t look back.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lZombies\n\n\\\"},
+                {\\\"text\\\":\\\"Zombies are common monsters that attack in hordes. There are a multitude of variants of zombies due to their infectious nature. \\\"},
+                {\\\"text\\\":\\\"They are said to be the remains of \\\"},
+                {\\\"text\\\":\\\"§kancient beings \\\"},
+                {\\\"text\\\":\\\"reanimated through necromancy. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Since the Zombies are infectious, there is talk of developing a cure, although nothing has been successful thus far. \\\"},
+                {\\\"text\\\":\\\"Here are the ones known to us now, there may be others yet to be discovered.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nCommon Zombies\\\"},
+                {\\\"text\\\":\\\" emerge in the darkness and will attack \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\" and \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\". They occasionally possess swords and armor. Additionally, they can break down doors. \\\"},
+                {\\\"text\\\":\\\"Although they hit hard, they are rather slow and easily dealt with from a distance.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nBaby Zombies\\\"},
+                {\\\"text\\\":\\\" are variants of Common Zombies that are significantly faster. They can also fit in a one block space. \\\"},
+                {\\\"text\\\":\\\"Sometimes they will mount chickens, this gives them the ability to float down for high places. \\\"},
+                {\\\"text\\\":\\\"They are particularly annoying and relentless.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nHusks\\\"},
+                {\\\"text\\\":\\\" are Zombies found in the desert biomes. They are very similar to Common Zombies, \\\"},
+                {\\\"text\\\":\\\"but are known to make all those touched by them extremely hungry.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nDrowned\\\"},
+                {\\\"text\\\":\\\" are Zombies found underwater. They carry copper, sea shells, and occasionally tridents. \\\"},
+                {\\\"text\\\":\\\"The only known way to obtain a trident is through killing them. If Zombies and Husks are submerged in water for a long period of time, \\\"},
+                {\\\"text\\\":\\\"they will be converted to Drowned.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nZombie Horses\\\"},
+                {\\\"text\\\":\\\" §kZombie horses are to be the horse equivalent of zombies. Like zombies, zombie horses are green-skinned and their eyes are completely black. \\\"},
+                {\\\"text\\\":\\\"§kTamed and saddled zombie horses can be used as one of the fastest means of transportation in the world. They can also be used to climb hills and jump fences.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§lSkeletons\n\n\\\"},
+                {\\\"text\\\":\\\"Much like Zombies, Skeletons are said to be the remains of \\\"},
+                {\\\"text\\\":\\\"§kancient beings \\\"},
+                {\\\"text\\\":\\\"reanimated through necromancy. Unlike Zombies, they are not infectious. There are only 2 known Skeleton variants in our world.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nCommon Skeletons \\\"},
+                {\\\"text\\\":\\\" emerge in the darkness and will attack \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\". They typically carry bows and will shoot from a distance, but when given a sword they will use it. \\\"},
+                {\\\"text\\\":\\\"Although they can be rather annoying, their arrows can be blocked with a shield.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nStrays\\\"},
+                {\\\"text\\\":\\\" are variants of Common Skeletons that spawn in colder areas. \\\"},
+                {\\\"text\\\":\\\"They carry arrows of slowness rather than normal arrows. Take extra precautions when encountering them.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nSkeleton Horses\\\"},
+                {\\\"text\\\":\\\" are extremely mysterious, and have only have been spotted during thunderstorms. \\\"},
+                {\\\"text\\\":\\\"If one is approached, a §kskeleton trap \\\"},
+                {\\\"text\\\":\\\"is triggered. They typically have 4 §kSkeleton Horsemen \\\"},
+                {\\\"text\\\":\\\"mounted on them wearing echanted gear.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§kBone Serpent\n\n\\\"},
+                {\\\"text\\\":\\\"§kThis long serpent creature appears to be made of bone and has red eyes. \\\"},
+                {\\\"text\\\":\\\"§kIt can occasionally be seen jumping out of the lava only to disappear into it again shortly after. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§kWither Skeleton\n\n\\\"},
+                {\\\"text\\\":\\\"§kWither skeletons are tall black variants of skeletons equipped with stone swords \\\"},
+                {\\\"text\\\":\\\"§kThey are found exclusively in nether fortresses \\\"}
+              ]\"
+            ],
+            title:Undead,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Guide to the Undead",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 231\n\n\\\"},
+                {\\\"text\\\":\\\"As I was researching enchanting late at night in the corner of the Grand Library, \\\"},
+                {\\\"text\\\":\\\"I witnessed other researchers emerging from inside of the fireplace. \\\"},
+                {\\\"text\\\":\\\"I was bewildered.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"I hid behind some bookshelves so they wouldn’t notice me. \\\"},
+                {\\\"text\\\":\\\"Since then, I have been trying to find how they got in there. \\\"},
+                {\\\"text\\\":\\\"I wonder if it has something to do with the levers below the signs in the language of enchantment.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #3",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 294\n\n\\\"},
+                {\\\"text\\\":\\\"I haven’t seen or heard from the researchers in months, \\\"},
+                {\\\"text\\\":\\\"they must be working on something. \\\"},
+                {\\\"text\\\":\\\"I heard it has to do with the asteroid.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #4",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lThe Asteroid\n\n\\\"},
+                {\\\"text\\\":\\\"On day 11 of living underground in the finished Stronghold, \\\"},
+                {\\\"text\\\":\\\"a rock from the sky crashed through the ground into our Dining Hall. \\\"},
+                {\\\"text\\\":\\\"It was a light green-yellow color with craters speckled all over the surface.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"It crashed in the middle of the night, at 11:18 P.M. \\\"},
+                {\\\"text\\\":\\\"Many of the \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\" nearby awoke to the noise and investigated. \\\"},
+                {\\\"text\\\":\\\"All those who approached it were met with visions they believed to be from the future. \\\"},
+                {\\\"text\\\":\\\"They all had the same vision. It depicted a mighty Dragon, flying through the sky. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"What came next is up for debate. Some believe that was all they saw. \\\"},
+                {\\\"text\\\":\\\"Others believe they also saw visions of the Dragon helping them build a better world. \\\"},
+                {\\\"text\\\":\\\"The mystery of what they really saw will likely never be solved.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Some of them went on to write the Scripture and worship The One Above All. \\\"},
+                {\\\"text\\\":\\\"They believe the One Above All, or the Dragon, will help them achieve The End, or a higher form. \\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Since then, there has been a great divide among us \\\"},
+                {\\\"text\\\":\\\"on whether we should trust these visions and follow the Scripture.\\\"},
+                {\\\"text\\\":\\\" The Asteroid was taken by the disciples for further research. They do not disclose the location to non-believers.\\\"}
+              ]\"
+            ],
+            title:Asteroid,
+            author:CraisinLord,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "The Asteroid",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lThe Scripture\n\n\\\"},
+                {\\\"text\\\":\\\"We have one goal: to\n\\\"},
+                {\\\"text\\\":\\\"breath beauty and life\n\\\"},
+                {\\\"text\\\":\\\"into this world\n\\\"},
+                {\\\"text\\\":\\\"through building. Our\n\\\"},
+                {\\\"text\\\":\\\"current form limits\n\\\"},
+                {\\\"text\\\":\\\"our ability to fulfill\n\\\"},
+                {\\\"text\\\":\\\"our imaginations. To\n\\\"},
+                {\\\"text\\\":\\\"realize our full\n\\\"},
+                {\\\"text\\\":\\\"potential, we must\n\\\"},
+                {\\\"text\\\":\\\"achieve The End form.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§oThe End \\\"},
+                {\\\"text\\\":\\\"form is the next step in our evolution.\n\n\\\"},
+                {\\\"text\\\":\\\"It is our full potential realized. \\\"},
+                {\\\"text\\\":\\\"The bounds of our mortal bodies would be lifted, we would be free to build. \\\"},
+                {\\\"text\\\":\\\"§oThe End \\\"},
+                {\\\"text\\\":\\\"will be granted to us by the One Above All. \\\"},
+                {\\\"text\\\":\\\"She need us, her disciples, to fullfill her goals.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"With our help,\n\n\\\"},
+                {\\\"text\\\":\\\"§oThe One Above All \\\"},
+                {\\\"text\\\":\\\"will snuff out the fires of the forest...\n\n\\\"},
+                {\\\"text\\\":\\\"She will cease all famine...\n\n\\\"},
+                {\\\"text\\\":\\\"She will save the sick and needy...\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"She will stop the\n\\\"},
+                {\\\"text\\\":\\\"§kundead\\\"},
+                {\\\"text\\\":\\\"from rising...\n\n\\\"},
+                {\\\"text\\\":\\\"She will elevate us to new levels\n\n\\\"},
+                {\\\"text\\\":\\\"Together, we will transform this world into a sanctuary for all, \\\"},
+                {\\\"text\\\":\\\"free of violence, suffering, and \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nWe know this.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWe have already seen it in the rocks from the sky.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§oShe waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWith her thunderous roar she waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWith her magical breath she waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oFlying high in the sky she waits for us.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"And we will find her.\\\"}
+              ]\"
+            ],
+            title:Scripture,
+            author:Priest,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Scripture of the Dragon",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lThe \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l:\n\\\"},
+                {\\\"text\\\":\\\"§lA Complete History\n\n\\\"},
+                {\\\"text\\\":\\\"We are an ancient\n\\\"},
+                {\\\"text\\\":\\\"race of \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\\\"},
+                {\\\"text\\\":\\\"travellers who hunted\n\\\"},
+                {\\\"text\\\":\\\"and gathered for\n\\\"},
+                {\\\"text\\\":\\\"food. Eventually, we\n\\\"},
+                {\\\"text\\\":\\\"settled down and\n\\\"},
+                {\\\"text\\\":\\\"began farming crops\n\\\"},
+                {\\\"text\\\":\\\"such as wheat,\n\\\"},
+                {\\\"text\\\":\\\"carrots, and\n\\\"},
+                {\\\"text\\\":\\\"potatoes\\\"},
+                {\\\"text\\\":\\\".\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"This gave us\n\\\"},
+                {\\\"text\\\":\\\"newfound time to build.\n\\\"},
+                {\\\"text\\\":\\\"Our passion is\n\\\"},
+                {\\\"text\\\":\\\"building, it is what\n\\\"},
+                {\\\"text\\\":\\\"makes us who we are.\n\\\"},
+                {\\\"text\\\":\\\"We built cities that\n\\\"},
+                {\\\"text\\\":\\\"stretched for\n\\\"},
+                {\\\"text\\\":\\\"hundreds of blocks.\n\\\"},
+                {\\\"text\\\":\\\"We were prospering.\n\n\\\"},
+                {\\\"text\\\":\\\"All that changed when\n\\\"},
+                {\\\"text\\\":\\\"the \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\" came.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"The \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\" forced\n\\\"},
+                {\\\"text\\\":\\\"us to flee. They\n\\\"},
+                {\\\"text\\\":\\\"burned our cities and\n\\\"},
+                {\\\"text\\\":\\\"fields. They destroyed\n\\\"},
+                {\\\"text\\\":\\\"our home. That is why\n\\\"},
+                {\\\"text\\\":\\\"we settled in this\n\\\"},
+                {\\\"text\\\":\\\"mighty Stronghold. It\n\\\"},
+                {\\\"text\\\":\\\"is a fortress\n\\\"},
+                {\\\"text\\\":\\\"underground that we\n\\\"},
+                {\\\"text\\\":\\\"hope they will never\n\\\"},
+                {\\\"text\\\":\\\"reach. Since then we\n\\\"},
+                {\\\"text\\\":\\\"have made a life for\n\\\"},
+                {\\\"text\\\":\\\"ourselves\n\\\"},
+                {\\\"text\\\":\\\"underground.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"We developed an\n\\\"},
+                {\\\"text\\\":\\\"entire society with no\n\\\"},
+                {\\\"text\\\":\\\"need of the sun or\n\\\"},
+                {\\\"text\\\":\\\"the light of day. We do\n\\\"},
+                {\\\"text\\\":\\\"everything from\n\\\"},
+                {\\\"text\\\":\\\"farming to \\\"},
+                {\\\"text\\\":\\\"§kdreaming\n\\\"},
+                {\\\"text\\\":\\\"in this mighty\n\\\"},
+                {\\\"text\\\":\\\"underground\n\\\"},
+                {\\\"text\\\":\\\"fortress. Our\n\\\"},
+                {\\\"text\\\":\\\"researchers have\n\\\"},
+                {\\\"text\\\":\\\"even developed new\n\\\"},
+                {\\\"text\\\":\\\"technologies such as\n\\\"},
+                {\\\"text\\\":\\\"rotational power and\n\\\"},
+                {\\\"text\\\":\\\"§kdimensional travel\\\"},
+                {\\\"text\\\":\\\".\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Since the faithful day\n\\\"},
+                {\\\"text\\\":\\\"that \\\"},
+                {\\\"text\\\":\\\"§kasteroid\\\"},
+                {\\\"text\\\":\\\" struck,\n\\\"},
+                {\\\"text\\\":\\\"we have looked to\n\\\"},
+                {\\\"text\\\":\\\"the skies for the\n\\\"},
+                {\\\"text\\\":\\\"mighty One Above All.\n\\\"},
+                {\\\"text\\\":\\\"We believe that one\n\\\"},
+                {\\\"text\\\":\\\"day, we will reunite\n\\\"},
+                {\\\"text\\\":\\\"with the One Above All\n\\\"},
+                {\\\"text\\\":\\\"to stop the \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\\\"},
+                {\\\"text\\\":\\\"and create a better\n\\\"},
+                {\\\"text\\\":\\\"world for all of its\n\\\"},
+                {\\\"text\\\":\\\"inhabitants.\\\"}
+              ]\"
+            ],
+            title:History,
+            author:CraisinLord,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Our People's History",
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 10
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 7
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supplementaries:candle_holder_purple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supplementaries:candle_holder_black",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supplementaries:statue"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 20
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "quark:ancient_tome",
+          "functions": [
+            {
+              "function": "quark:tome_enchant",
+              "levels": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "quark:blank_rune",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:crafting_blueprint",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:painting",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "quark:abacus",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

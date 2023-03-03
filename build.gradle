@@ -80,23 +80,26 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
+    implementation fg.deobf("curse.maven:intapi-${intapi_curseforge_id}:${intapi_curseforge_file_id}")
+    //runtimeOnly fg.deobf("curse.maven:idas-${idas_curseforge_id}:${idas_curseforge_file_id}")
+
     runtimeOnly fg.deobf("com.telepathicgrunt:StructureVoidToggle-Forge:4.0.2+1.19")
     runtimeOnly fg.deobf("com.telepathicgrunt:CommandStructures-Forge:3.0.0+1.19")
     runtimeOnly fg.deobf("curse.maven:jei-${jei_curseforge_id}:${jei_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:arl-${arl_curseforge_id}:${arl_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:theoneprobe-${top_curseforge_id}:${top_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:worldedit-${worldedit_curseforge_id}:${worldedit_curseforge_file_id}")
-    runtimeOnly fg.deobf("curse.maven:alexsmobs-${alexsmobs_curseforge_id}:${alexsmobs_curseforge_file_id}")
-    runtimeOnly fg.deobf("curse.maven:citadel-${citadel_curseforge_id}:${citadel_curseforge_file_id}")
+    //runtimeOnly fg.deobf("curse.maven:alexsmobs-${alexsmobs_curseforge_id}:${alexsmobs_curseforge_file_id}")
+    //runtimeOnly fg.deobf("curse.maven:citadel-${citadel_curseforge_id}:${citadel_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:rs-${rs_curseforge_id}:${rs_curseforge_file_id}")
-    runtimeOnly fg.deobf("curse.maven:biomesoplenty-${bop_curseforge_id}:${bop_curseforge_file_id}")
+    //runtimeOnly fg.deobf("curse.maven:biomesoplenty-${bop_curseforge_id}:${bop_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:tb-${tb_curseforge_id}:${tb_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:quark-${quark_curseforge_id}:${quark_curseforge_file_id}")
 
     ///runtimeOnly fg.deobf("curse.maven:wda-${wda_curseforge_id}:${wda_curseforge_file_id}")
     ///runtimeOnly fg.deobf("curse.maven:ybm-${ybm_curseforge_id}:${ybm_curseforge_file_id}")
     ///runtimeOnly fg.deobf("curse.maven:ybd-${ybd_curseforge_id}:${ybd_curseforge_file_id}")
-    ///runtimeOnly fg.deobf("curse.maven:yapi-${yapi_curseforge_id}:${yapi_curseforge_file_id}")
+    //implementation fg.deobf("curse.maven:yapi-${yapi_curseforge_id}:${yapi_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:sup-${sup_curseforge_id}:${sup_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:selene-${selene_curseforge_id}:${selene_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:waystones-${waystones_curseforge_id}:${waystones_curseforge_file_id}")
@@ -110,6 +113,7 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:create-${create_curseforge_id}:${create_curseforge_file_id}")
     ///runtimeOnly fg.deobf("curse.maven:flywheel-${flywheel_curseforge_id}:${flywheel_curseforge_file_id}")
     runtimeOnly fg.deobf("curse.maven:byg-${byg_curseforge_id}:${byg_curseforge_file_id}")
+    runtimeOnly fg.deobf("curse.maven:endrem-${endrem_curseforge_id}:${endrem_curseforge_file_id}")
 }
 
 

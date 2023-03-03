@@ -1,0 +1,522 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 202\n\n\\\"},
+                {\\\"text\\\":\\\"An incredible doorway was just installed in the Dining Hall. \\\"},
+                {\\\"text\\\":\\\"It spins open upon stepping on the plate outside of the door. \\\"},
+                {\\\"text\\\":\\\"I believe it was designed by \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\".\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #5",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 132\n\n\\\"},
+                {\\\"text\\\":\\\"I caught little \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"stealing the pies from the kitchen again! \\\"},
+                {\\\"text\\\":\\\"Kids will be kids I suppose.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #6",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 164\n\n\\\"},
+                {\\\"text\\\":\\\"While eating in the Dining Hall today I saw \\\"},
+                {\\\"text\\\":\\\"§kREDACTED \\\"},
+                {\\\"text\\\":\\\"sitting on the side of the room alone. \\\"},
+                {\\\"text\\\":\\\"I turn around to focus on my meal and the next thing I know they're gone!\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"I swear I heard a door open near the left side of the room...\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #19",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 144\n\n\\\"},
+                {\\\"text\\\":\\\"Someone stole all the sweets from the kitchen! \\\"},
+                {\\\"text\\\":\\\"Yesterday they were there and today every last one is gone.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Not even the pies were left... this is a sad day.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #20",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lMeeting Record\nDay 63\n\n\\\"},
+                {\\\"text\\\":\\\"§lMeeting led by: \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"§lTopic discussed: Grand Library\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"Today the topic of the newly built Grand Library was discussed. \\\"},
+                {\\\"text\\\":\\\"We decided it's use will consist of research, storing books, and in the second room we will study \\\"},
+                {\\\"text\\\":\\\"§kthe asteroid and the Mysterious materials inside of it\\\"}
+              ]\"
+            ],
+            title:Meeting,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Meeting Record #1",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lMeeting Record\nDay 306\n\n\\\"},
+                {\\\"text\\\":\\\"§lMeeting led by: \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"§lTopic discussed: The Expedition\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"During this all important meeting, we decided to send \\\"},
+                {\\\"text\\\":\\\"§kREDACTED, REDAC, and REDACTE\\\"},
+                {\\\"text\\\":\\\" through the mysterious device locked away deep within the Stronghold \\\"},
+                {\\\"text\\\":\\\"in hopes we may finally find \\\"},
+                {\\\"text\\\":\\\"§oThe One Above All \\\"},
+                {\\\"text\\\":\\\"awaiting us there. \\\"}
+              ]\"
+            ],
+            title:Meeting,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Meeting Record #2",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lMeeting Record\nDay 309\n\n\\\"},
+                {\\\"text\\\":\\\"§lMeeting led by: \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"§lTopic discussed: The Infection\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"After the deaths of \\\"},
+                {\\\"text\\\":\\\"§kREDACTED and REDACTE\\\"},
+                {\\\"text\\\":\\\" we decided to quarantine \\\"},
+                {\\\"text\\\":\\\"§kREDAC\\\"},
+                {\\\"text\\\":\\\" in the prison. \\\"},
+                {\\\"text\\\":\\\"We hope this can save the rest of us from the infection that consumed the other victims.\\\"}
+              ]\"
+            ],
+            title:Meeting,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Meeting Record #3",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lMeeting Record\nDay 85\n\n\\\"},
+                {\\\"text\\\":\\\"§lMeeting led by: \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\n\n\\\"},
+                {\\\"text\\\":\\\"§lTopic discussed: The Death of \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"After \\\"},
+                {\\\"text\\\":\\\"§kREDACTED \\\"},
+                {\\\"text\\\":\\\"was pushed in the lava in a trip to the Nether dimension, \\\"},
+                {\\\"text\\\":\\\"we think it was most likely that \\\"},
+                {\\\"text\\\":\\\"§kREDAC\\\"},
+                {\\\"text\\\":\\\" was the one who pushed them. \\\"},
+                {\\\"text\\\":\\\"They are being sent to the prison as we speak.\\\"}
+              ]\"
+            ],
+            title:Meeting,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Meeting Record #4",
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:water"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "quark:dirty_shard",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:flower_pot",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:honey_bottle"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:pumpkin_pie"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:cake"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:milk_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:honey_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:honeyed_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:rabbit_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:mushroom_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:beetroot_soup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:builders_tea"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "integrated_stronghold:music_disc_forlorn"
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:wheat_flour",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:dough",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:egg",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "quark:moss_paste",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:potato",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:baked_potato",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mobs": [
+    {
+      "name": "minecraft:cave_spider",
+      "weight": 20
+    },
+    {
+      "name": "minecraft:spider",
+      "weight": 5
+    }
+  ]
+}

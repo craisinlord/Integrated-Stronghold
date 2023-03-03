@@ -1,0 +1,503 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 164\n\n\\\"},
+                {\\\"text\\\":\\\"I just arrived to the Stronghold from \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\". I was warmly welcomed right away. \\\"},
+                {\\\"text\\\":\\\"This mighty fortress provides much needed protection from the dangers of the \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"},
+                {\\\"text\\\":\\\".\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"However, they won't stop talking about The One Above All. \\\"},
+                {\\\"text\\\":\\\"They are very adament I believe in their cause.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #1",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lAdventurer\\\"},
+                {\\\"text\\\":\\\"§l’s Journal\nDay 162\n\n\\\"},
+                {\\\"text\\\":\\\"I am visiting this mighty underground fortress. \\\"},
+                {\\\"text\\\":\\\"It is an technological and architectural wonder.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"I went through a lot of interrogation to get in. They have a lot of security measures. \\\"},
+                {\\\"text\\\":\\\"I wonder what they're so worried about on the surface.\\\"}
+              ]\"
+            ],
+            title:Journal,
+            author:Unkown,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Mysterious Journal #2",
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function":"set_nbt",
+        "tag":"{
+          pages:[
+              \"[
+                \\\"\\\",
+                {\\\"text\\\":\\\"§lThe Scripture\n\n\\\"},
+                {\\\"text\\\":\\\"We have one goal: to\n\\\"},
+                {\\\"text\\\":\\\"breath beauty and life\n\\\"},
+                {\\\"text\\\":\\\"into this world\n\\\"},
+                {\\\"text\\\":\\\"through building. Our\n\\\"},
+                {\\\"text\\\":\\\"current form limits\n\\\"},
+                {\\\"text\\\":\\\"our ability to fulfill\n\\\"},
+                {\\\"text\\\":\\\"our imaginations. To\n\\\"},
+                {\\\"text\\\":\\\"realize our full\n\\\"},
+                {\\\"text\\\":\\\"potential, we must\n\\\"},
+                {\\\"text\\\":\\\"achieve \\\"},
+                {\\\"text\\\":\\\"§oThe End \\\"},
+                {\\\"text\\\":\\\"form.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§oThe End \\\"},
+                {\\\"text\\\":\\\"form is the next step in our evolution.\n\n\\\"},
+                {\\\"text\\\":\\\"It is our full potential realized. \\\"},
+                {\\\"text\\\":\\\"The bounds of our mortal bodies would be lifted, we would be free to build. \\\"},
+                {\\\"text\\\":\\\"§oThe End \\\"},
+                {\\\"text\\\":\\\"will be granted to us by \\\"},
+                {\\\"text\\\":\\\"§oThe One Above All. \\\"},
+                {\\\"text\\\":\\\"She need us, her disciples, to fullfill her goals.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"With our help,\n\n\\\"},
+                {\\\"text\\\":\\\"§oThe One Above All \\\"},
+                {\\\"text\\\":\\\"will snuff out the fires of the forest...\n\n\\\"},
+                {\\\"text\\\":\\\"She will cease all famine...\n\n\\\"},
+                {\\\"text\\\":\\\"She will save the sick and needy...\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"She will stop the\n\\\"},
+                {\\\"text\\\":\\\"§kundead\\\"},
+                {\\\"text\\\":\\\"from rising...\n\n\\\"},
+                {\\\"text\\\":\\\"She will elevate us to new levels\n\n\\\"},
+                {\\\"text\\\":\\\"Together, we will transform this world into a sanctuary for all, \\\"},
+                {\\\"text\\\":\\\"free of violence, suffering, and \\\"},
+                {\\\"text\\\":\\\"§kREDACTED\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§nWe know this.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWe have already seen it in the rocks from the sky.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"§oShe waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWith her thunderous roar she waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oWith her magical breath she waits for us.\n\n\\\"},
+                {\\\"text\\\":\\\"§oFlying high in the sky she waits for us.\\\"}
+              ]\",
+              \"[
+                {\\\"text\\\":\\\"And we will find her.\\\"}
+              ]\"
+            ],
+            title:Scripture,
+            author:Priest,
+            display:{Lore:[\"Found in the ancient Stronghold\"]}
+            }"},
+            {
+              "function": "minecraft:set_name",
+              "name": "Scripture of the Dragon",
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 7
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 20
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "supplementaries:goblet",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "supplementaries:rope",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "supplementaries:soap",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "quark:blank_rune",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create:crafting_blueprint",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 5
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 7,
+          "name": "minecraft:experience_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 6
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 7
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:tripwire_hook",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "integrated_stronghold:disc_fragment_sight",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

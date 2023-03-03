@@ -1,0 +1,15 @@
+{
+  "name": "integrated_stronghold:nether_portal/nether_portal_hallway",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:nether_portal/nether_portal_hallway",
+        "processors": "integrated_stronghold:nether_portal_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

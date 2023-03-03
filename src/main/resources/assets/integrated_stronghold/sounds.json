@@ -1,0 +1,18 @@
+{
+  "forlorn": {
+    "sounds": [
+      {
+        "name": "integrated_stronghold:forlorn",
+        "stream": true
+      }
+    ]
+  },
+    "sight": {
+    "sounds": [
+      {
+        "name": "integrated_stronghold:sight",
+        "stream": true
+      }
+    ]
+  }
+}

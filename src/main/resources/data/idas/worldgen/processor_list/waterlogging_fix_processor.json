@@ -1,7 +1,0 @@
-{
-  "processors": [
-    {
-      "processor_type": "idas:waterlogging_fix_processor"
-    }
-  ]
-}

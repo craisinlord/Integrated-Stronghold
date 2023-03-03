@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#idas:collections/idasregular_forests",
-    "#idas:collections/idastaigas",
-    "#idas:collections/idasgiant_taigas"
-  ]
-}

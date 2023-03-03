@@ -3,54 +3,49 @@ loaderVersion="[38,)" #mandatory
 license="All rights reserved"
 
 [[mods]] #mandatory
-modId="idas" #mandatory
-logoFile="idaslogo.png"
+modId="integrated_stronghold" #mandatory
+logoFile="IntegratedStrongholdlogo.png"
 logoBlur=false
 version="${file.jarVersion}" #mandatory
-displayName="Integrated Dungeons and Structures" #mandatory
-displayURL="https://www.curseforge.com/minecraft/mc-mods/idas"
+displayName="Integrated Stronghold" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/Integrated-Stronghold"
 authors="CraisinLord"
 credits="Special thanks to TelpathicGrunt for thier structure tutorial! And Bdubs, GoodTimesWithScar and Mythical Sausage for building inspirations!"
 description='''
-Integrated Dungeons and Structures (aka IDAS) is a mod that adds heavily detailed structures using blocks and mobs from Quark, Biomes O’ Plenty, Alex’s Mobs, and Create.
+Integrated Stronghold (aka IntegratedStronghold) is a mod that adds heavily detailed structures using blocks and mobs from Quark, Biomes O’ Plenty, Alex’s Mobs, and Create.
 '''
 
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19,1.20)"
 
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
     modId="forge"
     mandatory=true
     versionRange="[43.1.0,)"
 
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
+    modId="integrated_api"
+    mandatory=true
+    versionRange="[1.2.2,)"
+
+[[dependencies.integrated_stronghold]]
     modId="quark"
     mandatory=true
     versionRange="*"
 
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
     modId="create"
     mandatory=true
     versionRange="*"
 
-[[dependencies.idas]]
-    modId="alexsmobs"
-    mandatory=true
-    versionRange="*"
-
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
     modId="autoreglib"
     mandatory=true
     versionRange="*"
 
-[[dependencies.idas]]
-    modId="citadel"
-    mandatory=true
-    versionRange="*"
-
-[[dependencies.idas]]
+[[dependencies.integrated_stronghold]]
     modId="supplementaries"
     mandatory=true
     versionRange="*"

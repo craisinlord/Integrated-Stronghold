@@ -1,0 +1,15 @@
+{
+  "name": "integrated_stronghold:prison/prison",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:prison/prison",
+        "processors": "integrated_stronghold:prison_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
