@@ -1,0 +1,15 @@
+{
+  "name": "integrated_stronghold:enchanting/enchanting_hallway",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:enchanting/enchanting_hallway",
+        "processors": "integrated_stronghold:enchanting_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

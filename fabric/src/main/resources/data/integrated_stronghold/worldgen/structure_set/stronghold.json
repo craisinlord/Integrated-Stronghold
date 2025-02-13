@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "integrated_stronghold:stronghold",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 68173563,
+    "spacing": 85,
+    "separation": 50,
+    "chunk_distance_to_first_ring": 80,
+    "ring_chunk_thickness": 96,
+    "type": "integrated_api:stronghold"
+  }
+}

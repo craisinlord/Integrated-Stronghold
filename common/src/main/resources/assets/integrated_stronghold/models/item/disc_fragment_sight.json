@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "integrated_stronghold:item/disc_fragment_sight"
+  }
+}

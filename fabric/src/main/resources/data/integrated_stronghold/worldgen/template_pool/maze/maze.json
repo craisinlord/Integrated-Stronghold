@@ -1,0 +1,33 @@
+{
+  "name": "integrated_stronghold:maze/maze",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:maze/maze1",
+        "processors": "integrated_stronghold:maze_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:maze/maze2",
+        "processors": "integrated_stronghold:maze_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:maze/maze3",
+        "processors": "integrated_stronghold:maze_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

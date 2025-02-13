@@ -1,0 +1,80 @@
+{
+  "processors": [
+    {
+      "rules": [
+        {
+          "output_state": {
+            "Name": "quark:spruce_chest"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "integrated_stronghold:chests/bedroom"
+          },
+          "input_predicate": {
+            "block": "quark:spruce_chest",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+        {
+          "output_state": {
+            "Name": "quark:spruce_trapped_chest"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "integrated_stronghold:chests/bedroom"
+          },
+          "input_predicate": {
+            "block": "quark:spruce_trapped_chest",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+        {
+          "output_state": {
+            "Name": "quark:jungle_trapped_chest"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "integrated_stronghold:chests/bedroom"
+          },
+          "input_predicate": {
+            "block": "quark:jungle_trapped_chest",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        },
+        {
+          "output_state": {
+            "Name": "minecraft:barrel"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "integrated_stronghold:chests/bedroom"
+          },
+          "input_predicate": {
+            "block": "minecraft:barrel",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        }
+      ],
+      "processor_type": "minecraft:rule"
+    },
+    {
+      "processor_type": "integrated_api:waterlogging_fix_processor"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.craisinlord.integrated_stronghold.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DisableVanillaStrongholdsMixin",
+    "LocateStrongholdCommandMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

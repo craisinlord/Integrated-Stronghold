@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "integrated_stronghold",
+  "version": "${version}",
+
+  "name": "Integrated Stronghold",
+  "description": "Adds integrated and drastically improves the Stronghold structure!",
+  "authors": [
+    "CraisinLord"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold",
+    "issues": "https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold"
+  },
+
+  "license": "All Rights Reserved",
+  "icon": "assets/integrated_stronghold/integrated_stronghold_logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.craisinlord.integrated_stronghold.IntegratedStrongholdFabric"
+    ]
+  },
+  "mixins": [
+    "integrated_stronghold-common.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.20",
+    "fabric": ">=0.83.0",
+    "midnightlib": ">=1.4.0",
+    "integrated_api": "*",
+    "create": "*",
+    "supplementaries": "*"
+  }
+}
+

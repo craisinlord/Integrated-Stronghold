@@ -1,0 +1,63 @@
+plugins {
+    id "architectury-plugin" version "3.4-SNAPSHOT"
+    id "dev.architectury.loom" version "1.5-SNAPSHOT" apply false
+    id "com.modrinth.minotaur" version "2.+"
+    id "com.matthewprenger.cursegradle" version "1.4.0"
+}
+
+architectury {
+    minecraft = rootProject.minecraft_version
+}
+
+subprojects {
+    apply plugin: "dev.architectury.loom"
+    apply plugin: "com.modrinth.minotaur"
+    apply plugin: "com.matthewprenger.cursegradle"
+
+    version = "${rootProject.mod_version}+${rootProject.minecraft_version}-${name}"
+
+    loom {
+        silentMojangMappingsLicense()
+    }
+
+    dependencies {
+        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+        mappings loom.officialMojangMappings()
+    }
+
+}
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "architectury-plugin"
+    apply plugin: "maven-publish"
+
+    archivesBaseName = rootProject.modid
+    version = "${rootProject.mod_version}+${rootProject.minecraft_version}-${name}"
+    group = rootProject.maven_group
+
+    repositories {
+        maven { url = 'https://maven.quiltmc.org/repository/release' }
+        maven {
+            url = 'https://maven.cafeteria.dev/releases'
+            content {
+                includeGroup 'dev.cafeteria'
+            }
+        }
+        maven { url "https://nexus.resourcefulbees.com/repository/telepathicgrunt/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://maven.shedaniel.me" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://www.cursemaven.com" }
+        maven { url "https://api.modrinth.com/maven/" }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+        options.release = 17
+    }
+
+    java {
+        withSourcesJar()
+    }
+}

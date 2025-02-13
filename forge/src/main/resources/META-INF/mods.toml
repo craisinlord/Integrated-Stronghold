@@ -1,0 +1,45 @@
+modLoader="javafml" #mandatory
+loaderVersion="[38,)" #mandatory
+license="All rights reserved"
+
+[[mods]] #mandatory
+modId="integrated_stronghold" #mandatory
+logoFile="../assets/integrated_stronghold/integrated_stronghold_logo.png"
+logoBlur=false
+version="${version}" #mandatory
+displayName="Integrated Stronghold" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold"
+authors="CraisinLord"
+description='''
+Adds integrated and drastically improves the Stronghold structure!
+'''
+
+[[dependencies.integrated_stronghold]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20,1.21)"
+
+[[dependencies.integrated_stronghold]]
+    modId="integrated_api"
+    mandatory=true
+    versionRange="[1.4.2,)"
+
+[[dependencies.integrated_stronghold]]
+    modId="forge"
+    mandatory=true
+    versionRange="[46.0.1,)"
+
+[[dependencies.integrated_stronghold]]
+    modId="create"
+    mandatory=true
+    versionRange="*"
+
+[[dependencies.integrated_stronghold]]
+    modId="supplementaries"
+    mandatory=true
+    versionRange="*"
+
+[[dependencies.integrated_stronghold]]
+    modId="quark"
+    mandatory=true
+    versionRange="*"

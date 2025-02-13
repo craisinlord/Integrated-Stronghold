@@ -1,0 +1,78 @@
+{
+  "name": "integrated_stronghold:fountain/small_room_left",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_armory_left",
+        "processors": "integrated_stronghold:armory_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_library_left",
+        "processors": "integrated_stronghold:library_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_bedroom_left",
+        "processors": "integrated_stronghold:bedroom_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_storage_left",
+        "processors": "integrated_stronghold:storage_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_farm_left",
+        "processors": "integrated_stronghold:farm_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_prison_left",
+        "processors": "integrated_stronghold:prison_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_brewing_left",
+        "processors": "integrated_stronghold:brewing_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:small_room/small_crypt_left",
+        "processors": "integrated_stronghold:crypt_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

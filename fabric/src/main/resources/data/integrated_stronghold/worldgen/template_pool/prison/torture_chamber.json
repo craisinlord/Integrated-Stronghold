@@ -1,0 +1,15 @@
+{
+  "name": "integrated_stronghold:prison/torture_chamber",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "integrated_stronghold:prison/torture_chamber",
+        "processors": "integrated_stronghold:torture_chamber_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

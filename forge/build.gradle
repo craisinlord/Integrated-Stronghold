@@ -1,0 +1,110 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+loom {
+    forge {
+        mixinConfig "integrated_stronghold-common.mixins.json"
+    }
+
+    runs {
+        all {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+        data {
+            data()
+            programArgs("--all", "--mod", "integrated_stronghold")
+            programArgs("--existing", project(":common").file("src/main/resources").absolutePath)
+            programArgs("--output", project(":common").file("src/main/generated/resources").absolutePath)
+        }
+    }
+}
+
+configurations {
+    common
+    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+}
+
+dependencies {
+    forge "net.minecraftforge:forge:${rootProject.forge_version}"
+
+    modLocalRuntime("com.telepathicgrunt:CommandStructures-Forge:${project.commandstructures_forge}")
+    modLocalRuntime("com.telepathicgrunt:StructureVoidToggle-Forge:${project.structurevoidtoggle_forge}")
+
+//    //Required Dependencies
+    modLocalRuntime("curse.maven:intapi-${project.intapi_curseforge_id}:${project.intapi_curseforge_file_id_forge}")
+    compileOnly("curse.maven:intapi-${project.intapi_curseforge_id}:${project.intapi_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:create-${project.create_curseforge_id_forge}:${project.create_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:sup-${project.sup_curseforge_id}:${project.sup_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:moonlight-${project.moonlight_curseforge_id}:${project.moonlight_curseforge_file_id_forge}")
+    modLocalRuntime("curse.maven:quark-${project.quark_curseforge_id}:${project.quark_curseforge_file_id}")
+    modLocalRuntime("curse.maven:zeta-${project.zeta_curseforge_id}:${project.zeta_curseforge_file_id}")
+//
+//    //Optional Dependencies
+//    modLocalRuntime("curse.maven:tb-${project.tb_curseforge_id_forge}:${project.tb_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:jei-${project.jei_curseforge_id}:${project.jei_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:bop-${project.bop_curseforge_id}:${project.bop_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:top-${project.top_curseforge_id}:${project.top_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:worldedit-${project.worldedit_curseforge_id}:${project.worldedit_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:alexsmobs-${project.alexsmobs_curseforge_id}:${project.alexsmobs_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:if-${project.if_curseforge_id}:${project.if_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:citadel-${project.citadel_curseforge_id}:${project.citadel_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:rs-${project.rs_curseforge_id_forge}:${project.rs_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:terralith-${project.terralith_curseforge_id}:${project.terralith_curseforge_file_id}")
+//    modLocalRuntime("curse.maven:waystones-${project.waystones_curseforge_id_forge}:${project.waystones_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:balm-${project.balm_curseforge_id_forge}:${project.balm_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:farmers-${project.farmers_curseforge_id_forge}:${project.farmers_curseforge_file_id_forge}")
+//    modLocalRuntime("curse.maven:endrem-${project.endrem_curseforge_id}:${project.endrem_curseforge_file_id}")
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+
+    implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-common:${rootProject.mixin_extras}"))
+    implementation(include("com.github.llamalad7.mixinextras:mixinextras-forge:${rootProject.mixin_extras}"))
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("META-INF/mods.toml") {
+        expand "version": project.version
+    }
+}
+
+shadowJar {
+    exclude "fabric.mod.json"
+    exclude "architectury.common.json"
+
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier.set("dev-shadow")
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+    archiveClassifier.set(null)
+}
+
+jar {
+    archiveClassifier.set("dev")
+}
+
+sourcesJar {
+    def commonSources = project(":common").sourcesJar
+    dependsOn commonSources
+    from commonSources.archiveFile.map { zipTree(it) }
+}
+
+components.java {
+    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
+        skip()
+    }
+}
